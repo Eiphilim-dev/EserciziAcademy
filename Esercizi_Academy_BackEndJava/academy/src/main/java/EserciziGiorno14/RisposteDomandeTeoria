@@ -1,0 +1,136 @@
+1)Definisci l’overload.
+Overload significa avere più metodi con lo stesso nome, ma con parametri diversi.
+In questo modo si può usare lo stesso nome per operazioni simili, ma con input diversi.
+
+2)Definisci l’override.
+Override significa riscrivere un metodo già presente nella classe genitore nella classe figlia. 
+Così la classe figlia può cambiare il comportamento del metodo.
+
+3)Spiega cos’è il polimorfismo.
+Il polimorfismo è la capacità di trattare oggetti in modi diversi, anche se appartengono alla stessa famiglia di classi. 
+Un esempio semplice è usare un riferimento alla classe padre per gestire oggetti delle classi figlie.
+
+4)Qual è la differenza tra polimorfismo per dati e polimorfismo per metodi?
+Il polimorfismo per dati riguarda la possibilità di usare lo stesso dato in forme diverse a seconda del contesto. 
+Il polimorfismo per metodi, invece, permette di usare lo stesso metodo con comportamenti diversi in base all’oggetto che lo chiama.
+
+5)Cos’è un’eccezione? Che differenza c’è tra checked e unchecked?
+Un’eccezione è un errore o un evento imprevisto che si verifica durante l’esecuzione del programma. 
+Le checked devono essere gestite esplicitamente, mentre le unchecked non sono obbligatorie da gestire.
+
+6)Quando utilizziamo il multi catch?
+Il multi catch si usa quando vogliamo catturare più eccezioni diverse con lo stesso blocco di codice, 
+per evitare di scrivere più catch uguali.
+
+7)Cosa rappresentano gli enum?
+Gli enum rappresentano un insieme di valori finiti e ben definiti, come i giorni della settimana o le stagioni. 
+Sono utili per rendere il codice più leggibile e sicuro.
+
+8)Come funziona uno switch con gli enum?
+Con lo switch si controlla il valore di una variabile enum e si eseguono diverse azioni in base ai casi previsti. 
+È molto simile allo switch normale, ma lavora con gli enum.
+
+9)Cosa sono i generics?
+I generics sono una maniera per scrivere classi e metodi che funzionano con diversi tipi di dati, 
+senza dover riscrivere tutto. In questo modo il codice è più riutilizzabile.
+
+10)Qual è la sintassi dell’espressione lambda?
+La sintassi di una lambda è: (parametri) -> espressione o blocco di codice. 
+È una forma breve per scrivere funzioni semplici.
+
+11)Definisci Framework Collections?
+Il Framework Collections è un insieme di strutture dati già pronte in Java, come liste, set e mappe. 
+Serve per organizzare e gestire meglio i dati.
+
+12)Spiega le differenze tra HashSet e TreeSet.
+HashSet e TreeSet sono entrambi set, ma differiscono in modo importante. 
+HashSet non mantiene l’ordine dei dati, mentre TreeSet li tiene ordinati in modo automatico.
+
+13)Cos’è Git? E Git Bash?
+Git è uno strumento per gestire le versioni di un progetto. 
+Git Bash è la finestra di comando usata per lavorare con Git su Windows.
+
+14)Spiega la funzione dell’area di staging.
+L’area di staging è la zona dove si mettono i file prima di fare il commit. 
+Serve per scegliere esattamente cosa salvare nella nuova versione.
+
+15)Qual è la definizione di testing?
+Il testing è il processo di controllare se un software funziona correttamente e se rispetta le richieste.
+Aiuta a trovare errori prima che il programma venga usato.
+
+16)Cosa si intente per glossario standard della terminologia dell’ingegneria per lo sviluppo del software?
+Il glossario standard della terminologia dell’ingegneria del software è un insieme di parole e definizioni condivise.
+Serve a parlare tutti nello stesso modo, evitando confusioni.
+
+17)Riassumi brevemente la storia del testing.
+La storia del testing è iniziata con controlli manuali, poi sono arrivati test più strutturati e automatici. 
+Oggi si usano test unitari, di integrazione e automatizzati per migliorare la qualità del software.
+
+18)Spiega il framework è Selemium.
+Selenium è un framework usato per automatizzare i browser. È molto utile per fare test di applicazioni web.
+
+19)Descrivi l’utilizzo dei comandi principali di Selenium Web Driver.
+I comandi principali di Selenium WebDriver permettono di aprire una pagina, trovare elementi, cliccare, scrivere testi e chiudere il browser. 
+Sono gli strumenti base per automatizzare azioni utente.
+
+20)Cos’è Selenium Grid?
+Selenium Grid è uno strumento che permette di eseguire i test su più browser e più macchine contemporaneamente. 
+È utile per risparmiare tempo e testare in ambienti diversi.
+
+21)Descrivi l’architettura monolitica.
+L’architettura monolitica è quando tutta l’applicazione è costruita in un unico blocco. 
+È semplice da gestire all’inizio, ma può diventare difficile da aggiornare quando cresce.
+
+22)Che cos’è un microservizio?
+Un microservizio è un piccolo servizio software che fa una funzione specifica e può essere sviluppato e gestito separatamente.
+È pensato per lavorare insieme ad altri servizi.
+
+23)Definisci le differenze tra architettura monolitica e microservizi.
+Nella architettura monolitica tutto sta in un unico sistema, mentre nei microservizi il sistema è diviso in più parti indipendenti.
+I microservizi sono più flessibili, ma richiedono anche più organizzazione.
+
+24)Cosa si intente per xml? E per Json?
+XML e JSON sono formati usati per scambiare dati tra sistemi. XML usa tag, 
+mentre JSON usa una struttura più semplice e leggibile, simile a oggetti.
+
+25)Cosa si intente per scalabilità?
+La scalabilità è la capacità di un sistema di gestire più utenti, più dati o più richieste senza fermarsi.
+È importante quando un’app cresce.
+
+26)Che ruolo ha il team nella realizzazione di un microservizio?
+Nel team di un microservizio ci sono persone che lo sviluppano, lo testano, lo fanno eseguire e lo mantengono.
+Il lavoro di squadra è fondamentale per farlo funzionare bene.
+
+27)Cosa si intende per inconsistenza dei dati?
+L’inconsistenza dei dati significa che le informazioni non sono tutte uguali o aggiornate nello stesso modo.
+Questo può creare errori o confusioni.
+
+28)Che differenza c’è tra la comunicazione sincrona e quella asincrona?
+La comunicazione sincrona avviene quando un sistema aspetta una risposta subito. 
+La comunicazione asincrona invece permette di continuare il lavoro mentre si aspetta la risposta.
+
+29)Definisci il Circuit Breaker.
+Il Circuit Breaker è un meccanismo che interrompe le chiamate a un servizio quando questo sta fallendo troppo spesso.
+Serve a proteggere il sistema da blocchi inutili.
+
+30)Cosa si intende per continuos deployment?
+Il continuous deployment è la pratica di rilasciare automaticamente nuove versioni del software dopo che i test passano.
+In questo modo le modifiche arrivano più velocemente agli utenti.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

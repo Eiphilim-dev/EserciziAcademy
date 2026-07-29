@@ -1,0 +1,103 @@
+1)Definisci la differenza tra oggetto, classe e istanza.
+Classe, oggetto, istanza: la classe è il modello; l’oggetto è l’entità concreta con stato e comportamento;
+l’istanza è semplicemente un oggetto creato da una classe.
+
+2)Cos’è il processo di astrazione?
+Astrazione: è il processo con cui si eliminano i dettagli non essenziali
+e si mantiene solo ciò che serve a rappresentare un concetto.
+
+3)Qual è lo scope di una variabile?
+Scope di una variabile: è la zona del codice in cui quella variabile è visibile e utilizzabile.
+
+4)Cosa sono gli operatori logico booleani?
+Operatori logico booleani: sono operatori che lavorano su valori true e false, per esempio &&, || e !.
+
+5)Definisci gli inizializzatori.
+Inizializzatori: sono blocchi o assegnazioni usati per inizializzare attributi o classi;
+in Java possono essere di istanza o static.
+
+6)Cos’è il tipo di ritorno di un metodo e cosa implica?
+Tipo di ritorno di un metodo: indica quale tipo di valore il metodo restituisce; se non restituisce nulla si usa void.
+
+7)Cosa sono i Wrapper?
+Wrapper: sono classi che “avvolgono” i tipi primitivi, per esempio Integer per int, Double per double, Boolean per boolean.
+
+8)Che differenza c’è tra le strutture di controllo selettive e quelle iterative?
+Selettive vs iterative: le strutture selettive scelgono un percorso (if, switch),
+quelle iterative ripetono istruzioni (for, while, do-while).
+
+9)Descrivi quali sono le figure professionali che si occupano dei progetti.
+Figure professionali nei progetti: in genere ci sono project manager, analista, sviluppatore,
+tester/QA, architetto software e a volte product owner o scrum master.
+
+10)Definisci gli array e fai un esempio.
+Un array è un contenitore ordinato con posizione numerata che raccoglie più valori tutti dello stesso tipo.
+
+11)Quali sono i modificatori d’accesso?
+Modificatori d’accesso: in Java sono public, protected, private e default/package-private.
+
+12)Descrivi il modificatore static.
+static: indica che un membro appartiene alla classe e non ai singoli oggetti.
+
+13)Descrivi l’utilizzo della parola chiave final.
+final: si usa per impedire modifiche: una variabile non può essere riassegnata,
+un metodo non può essere ridefinito, una classe non può essere estesa.
+
+14)Per cosa utilizziamo abstract?
+abstract: si usa per definire classi o metodi incompleti, da specializzare nelle sottoclassi.
+
+15)Descrivere il processo dell’incapsulamento.
+Incapsulamento: consiste nel nascondere i dettagli interni di un oggetto
+e permettere l’accesso controllato ai dati tramite metodi pubblici.
+
+16)Cosa sono getters e setters e a cosa servono?
+Getter e setter: sono metodi usati per leggere e modificare gli attributi, spesso con controlli o validazioni.
+
+17)Cosa rappresenta l’ereditarietà in Java?
+Ereditarietà in Java: permette a una classe figlia di riusare attributi
+e metodi di una classe padre e di specializzarne il comportamento.
+
+18)Quali sono le conseguenze dell’ereditarietà?
+Conseguenze dell’ereditarietà: si ottiene riuso del codice, specializzazione delle classi e possibilità di override dei metodi.
+
+19)Cosa sono le interfacce?
+Interfacce: sono contratti che definiscono metodi che una classe deve fornire.
+
+20)Che differenza c’è tra classe astratta ed interfaccia?
+Classe astratta vs interfaccia: una classe astratta può avere stato e metodi già
+implementati; un’interfaccia definisce soprattutto un contratto comune.
+
+21)Definisci l’overload.
+Overload: più metodi con lo stesso nome ma parametri diversi nella stessa classe.
+
+22)Definisci l’override.
+Override: una sottoclasse riscrive un metodo ereditato mantenendo la stessa firma.
+
+23)Spiega cos’è il polimorfismo.
+Polimorfismo: è la possibilità di usare oggetti diversi tramite un tipo comune, 
+ottenendo comportamenti diversi quando viene chiamato lo stesso metodo
+
+24)Qual è la differenza tra polimorfismo per dati e polimorfismo per metodi?
+Polimorfismo per dati vs per metodi: per dati significa che una variabile può riferirsi
+a oggetti di tipi diversi ma compatibili; per metodi significa che la stessa chiamata a un metodo produce comportamenti diversi.
+
+25)Cosa può fare un parametro polimorfo?
+Parametro polimorfo: può ricevere oggetti di classi diverse purché abbiano una stessa
+superclasse o implementino la stessa interfaccia.
+
+26)Cos’è un’eccezione?
+Eccezione: è un evento anomalo o errore che interrompe il flusso normale del programma.
+
+27)Che differenza c’è tra checked e unchecked?
+Checked vs unchecked: le checked devono essere gestite o dichiarate; le unchecked no, perché derivano in genere da
+errori di programmazione.
+
+28)Quando utilizziamo il multi catch?
+Multi-catch: si usa quando vuoi gestire nello stesso blocco catch più tipi di eccezione.
+
+29)Cosa sono le asserzioni?
+Asserzioni: sono controlli usati soprattutto in sviluppo per verificare che una condizione sia vera; se è falsa,
+il programma segnala l’errore.
+
+30)Spiegala funzione del blocco finally.
+finally: è un blocco che viene eseguito comunque, utile soprattutto per chiudere risorse o fare pulizia.

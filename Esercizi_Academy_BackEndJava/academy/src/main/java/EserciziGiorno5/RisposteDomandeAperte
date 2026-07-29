@@ -1,0 +1,340 @@
+Domanda 1
+Cos’è un linguaggio di programmazione?
+
+Un linguaggio di programmazione è un sistema di comunicazione che permette di scrivere istruzioni comprensibili
+per un computer. Composto da un insieme di regole per definire come combinare simboli e parole chiave per creare
+dei programmi eseguibili. I linguaggi di programmazione vengono tradotti in linguaggio macchina grazie a un compilatore
+o un interprete
+
+Domanda 2
+Definisci il linguaggio Java.
+
+Java è un linguaggio di programmazione ad alto livello, orientato agli oggetti,
+fortemente tipizzato e platform-independent. Il codice sorgente viene compilato in bytecode,
+eseguito dalla Java Virtual Machine (JVM). Questo lo rende indipendente dalla piattaforma hardware.
+
+Domanda 3
+Cos’è un linguaggio orientato agli oggetti?
+
+Un linguaggio orientato agli oggetti (OOP - Object-Oriented Programming) è un paradigma di
+programmazione basato sul concetto di "oggetti", contengono sia dati che comportamenti.
+I principi fondamentali sono:
+
+Incapsulamento: nascondere i dettagli e mostrare solo ciò che è necessario
+
+Ereditarietà: una classe può ereditare caratteristiche da un'altra classe
+
+Polimorfismo: capacità di trattare oggetti di tipi diversi attraverso un'interfaccia comune
+
+Astrazione: modellare solo gli aspetti importanti, nascondendo la complessità
+
+Domanda 4
+Quali sono le caratteristiche principali di Java.
+
+Le caratteristiche principali di Java sono:
+
+Orientato agli oggetti: tutto (o quasi) in Java è un oggetto
+
+Platform-independent: il bytecode gira su qualsiasi piattaforma tramite la JVM
+
+Robusto: gestione automatica della memoria (Garbage Collector), gestione delle eccezioni
+
+Sicuro: esecuzione in ambiente controllato (sandbox), nessun accesso diretto alla memoria
+
+Multithreading: supporto nativo per la programmazione concorrente
+
+Distribuito: supporto integrato per reti e applicazioni distribuite
+
+Interpretato e compilato: bytecode compilato, poi interpretato/JIT dalla JVM
+
+Domanda 5
+Cos’è una variabile?
+
+Una variabile è un identificatore che rappresenta una porzione di memoria in cui viene memorizzato un valore
+In Java, ogni variabile ha un tipo di dato associato che determina che
+tipo di valori può contenere e le operazioni che vi si possono eseguire.
+
+Domanda 6
+Che differenza c’è tra un linguaggio compilato ed interpretato.
+
+(Più veloce)
+Linguaggio compilato : Il codice sorgente viene tradotto interamente in linguaggio macchina prima dell'esecuzione
+
+(Più lento)
+Linguaggio interpretato : Il codice viene tradotto ed eseguito riga per riga durante l'esecuzione
+
+Java è ibrido: il codice sorgente viene compilato in bytecode (non in linguaggio macchina nativo),
+che viene poi interpretato e/o compilato Just-In-Time (JIT) dalla JVM durante l'esecuzione.
+
+Domanda 7
+Come si aggiunge un commento nel linguaggio Java?
+
+// Commento su una singola riga
+
+/* 
+   Commento su 
+   multiple righe 
+*/
+
+/**
+ * Commento di documentazione (Javadoc)
+ * Usato per generare documentazione automatica
+ * @param nome descrizione
+ * @return descrizione
+ */
+
+I commenti Javadoc sono importanti perchè generano documentazione HTML automatica tramite il tool di javadoc
+
+Domanda 8
+Che cos’è un oggetto?
+
+Un oggetto è un'istanza di una classe, rappresenta un'entità concreta nel programma. Un oggetto possiede:
+
+Stato: rappresentato dagli attributi (variabili d'istanza)
+
+Comportamento: rappresentato dai metodi
+
+Identità: una posizione unica in memoria che lo distingue dagli altri oggetti
+
+Domanda 9
+Una classe è un blueprint che definisce la struttura e il comportamento di un insieme di oggetti. È il progetto 
+a partire dal quale si creano (istanziano) gli oggetti.
+
+Domanda 10
+Quali sono gli operatori di confronto?
+
+Uguale a: == 
+Diverso da: != 
+Maggiore di: >
+Minore di: <
+Maggiore o uguale: >=
+Minore o uguale: <= 
+È istanza di (tipo): instanceof
+
+Restituiscono sempre un valore boolean.
+
+Domanda 11
+Cosa si intende per istanza?
+
+Un'istanza è un oggetto specifico creato a partire da una classe.
+Quando crei un oggetto con new, stai istanziando la classe.
+
+Domanda 12
+Cos’è un attributo?
+
+Un attributo è una variabile dichiarata all'interno di una classe ma fuori da qualsiasi metodo
+Ogni istanza della classe ha la propria copia degli attributi.
+
+Domanda 13
+Cosa sono JDK, JRE, JVM e a cosa servono?
+
+JVM (Java Virtual Machine): È la macchina virtuale che esegue il bytecode Java.
+Si occupa di tradurre il bytecode in istruzioni macchina specifiche per la piattaforma hardware sottostante.
+Garantisce il principio "Write Once, Run Anywhere".
+
+JRE (Java Runtime Environment): È l'ambiente di runtime che include la JVM e le
+librerie standard necessarie per eseguire applicazioni Java. È ciò che serve per
+eseguire programmi Java, ma non per svilupparli.
+
+JDK (Java Development Kit): È il kit di sviluppo completo. Include il JRE più strumenti 
+di sviluppo come il compilatore (javac), il debugger, javadoc, ecc. È ciò che serve per sviluppare programmi Java.
+
+Domanda 14
+La sigla IDE cosa rappresenta?
+
+IDE sta per Integrated Development Environment (Ambiente di Sviluppo Integrato). 
+È un software che fornisce strumenti integrati per lo sviluppo: editor di codice, compilatore,
+debugger, autocomplete, gestione progetti. Esempi: IntelliJ IDEA, Eclipse, NetBeans, VS Code.
+
+Domanda 15
+A cosa servono le librerie?
+
+Le librerie sono raccolte di codice precompilato e riutilizzabile che
+forniscono funzionalità pronte all'uso. Permettono di:
+Risparmiare tempo,
+Utilizzare soluzioni testate e ottimizzate,
+Standardizzare approcci comuni
+
+Si gestiscono tramite strumenti come Maven o Gradle.
+
+Domanda 16
+Cos'è un metodo e a cosa serve? Qual è la firma di un metodo?
+
+Un metodo è un blocco di codice che esegue una specifica operazione.
+Serve per organizzare il codice in unità logiche e riutilizzabili, 
+evitare duplicazione e implementare il comportamento degli oggetti.
+La firma di un metodo è composta da: 
+Nome del metodo
+
+Lista dei parametri.
+
+Domanda 17
+Definisci la differenza tra un metodo statico e un metodo d'istanza.
+
+Metodo Statico
+Appartiene alla classe, non all'oggetto,
+Non può accedere direttamente a variabili d'istanza o metodi d'istanza,
+Non usa this,
+Non serve creare un oggetto
+
+Metodo d'Istanza
+Appartiene all'oggetto (istanza)
+Può accedere a variabili d'istanza e metodi statici
+Può usare this
+Serve un'istanza
+
+Domanda 18
+Cos'è un costruttore?
+
+Un costruttore è un metodo speciale che viene chiamato automaticamente quando si crea un oggetto
+con l'operatore new. Serve per inizializzare lo stato dell'oggetto.
+Ha lo stesso nome della classe
+Se non definito, Java fornisce un costruttore di default senza parametri
+Può avere parametri
+
+Domanda 19
+A cosa serve l'operatore new?
+
+L'operatore new serve per creare (istanziare) un nuovo oggetto in memoria
+
+Domanda 20
+Cos'è un package e a cosa serve?
+
+Un package è un meccanismo per organizzare e raggruppare classi e interfacce correlate in namespace. Serve per:
+
+Evitare conflitti di nomi tra classi
+
+Organizzare logicamente il codice
+
+Controllare l'accesso (visibilità tra package)
+
+Facilitare la ricerca e il riutilizzo
+
+Domanda 21
+Descrivi i tipi di dato primitivi che conosci.
+
+byte 8 bit	
+short 16 bit
+int 32 bit
+long 64 bit
+float 32 bit 
+double 64 bit
+char 16 bit
+boolean 1 bit
+
+Domanda 22
+Cosa sono i reference?
+
+I reference (riferimenti) sono variabili che non contengono direttamente il valore,
+ma l'indirizzo di memoria in cui si trova l'oggetto.
+
+Domanda 23
+Cosa si intende con indentazione? Perché è importante?
+
+L'indentazione è la pratica di spostare verso destra il codice nidificato per renderlo più leggibile
+Migliora la leggibilità del codice
+
+Rende visibile la struttura logica (blocchi annidati)
+
+Aiuta a identificare rapidamente errori come parentesi non chiuse
+
+È una best practice universale
+
+Domanda 24
+Come avviene in Java il passaggio di parametri?
+
+Tipi primitivi: viene passata una copia del valore.
+Tipi riferimento (oggetti): viene passata una copia del reference.
+
+Le modifiche agli attributi dell'oggetto sono visibili all'esterno, 
+ma la riassegnazione del reference non ha effetto sull'originale.
+
+Domanda 25
+Descrivi l'utilizzo della parola this.
+
+this è un riferimento implicito all'oggetto corrente (l'istanza su cui è stato chiamato il metodo). Si usa per:
+
+Distinguere attributi da parametri con lo stesso nome
+
+Chiamare un altro costruttore della stessa classe: this(parametri).
+
+Domanda 26
+Cosa sono le Stringhe in Java?
+
+Le Stringhe (String) sono sequenze immutabili di caratteri.
+
+Sono oggetti (non tipi primitivi)
+
+Sono immutabili: una volta creato un oggetto String, il suo valore non può essere modificato
+
+Se modifichi una String, viene creato un nuovo oggetto
+
+Sono memorizzate in un'area chiamata String Pool per ottimizzazione
+
+Domanda 27
+Cos'è un blocco di codice?
+
+Un blocco di codice è un gruppo di istruzioni racchiuse tra parentesi graffe { }. Definisce lo scope.
+
+Domanda 28
+Quali strutture di controllo conosci? Descrivile e fai un esempio.
+
+Condizionali: 
+
+if (voto >= 18) {
+    System.out.println("Promosso");
+
+} else if (voto >= 30) {
+    System.out.println("Ottimo");
+
+} else {
+    System.out.println("Bocciato");
+
+}
+
+switch (giorno) {
+    case 1:
+        System.out.println("Lunedì");
+        break;
+
+    case 2:
+        System.out.println("Martedì");
+        break;
+
+    default:
+        System.out.println("Altro giorno");
+
+Iterative:
+
+int[] numeri = {1, 2, 3, 4, 5};
+for (int n : numeri) {
+    System.out.println(n);
+
+}
+
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+
+}
+
+// do-while (post-condizionale)
+do {
+    // eseguito almeno una volta
+
+} while (condizione);
+
+while (condizione) {
+    // eseguito finché la condizione è true
+}
+
+Domanda 29
+Spiega l'utilizzo dell'operatore ternario.
+
+L'operatore ternario ? : è una forma compatta di if-else che restituisce un valore.
+
+Domanda 30
+Qual è la funzione di break? E di continue?
+
+break: Interrompe immediatamente il ciclo o lo switch in cui si trova, uscendo dal blocco
+continue: Salta il resto dell'iterazione corrente e passa direttamente alla successiva iterazione del ciclo
+
