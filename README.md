@@ -14,24 +14,28 @@ EserciziAcademy/
 
 ## 📚 Contenuti
 
-### EsercitazioneHibernate
-Esercitazioni pratiche sull'ORM Hibernate, suddivise per giornata:
-- **Giorno 1** – Introduzione a Hibernate, configurazione base e prime entità mappate.
-- **Giorno 2** – Approfondimento su relazioni tra entità, sessioni e query.
-
 ### Esercizi_Academy_BackEndJava
 Esercitazioni generali di back-end Java (progetto IntelliJ IDEA), propedeutiche allo sviluppo di applicazioni server-side.
+
+### EsercitazioneHibernate
+Esercitazioni pratiche sull'ORM Hibernate.
+
+### EsercitazioneSpringBoot
+Esercitazioni dedicate al framework Spring e a Spring Boot
+
 
 ## 🛠️ Tecnologie utilizzate
 
 - **Linguaggio:** Java
+- **Framework:** Spring, Spring Boot
 - **ORM:** Hibernate
 - **Build tool:** Maven
+- **Database:** MySQL, PostgreSQL
 
 
 ## 📌 Note
 
-Repository a scopo didattico, creato durante il percorso di formazione Academy. I contenuti verranno aggiornati progressivamente con nuove esercitazioni.
+Repository a scopo didattico, creato durante il percorso di formazione Academy. I contenuti verranno aggiornati progressivamente con nuove esercitazioni (Hibernate, Spring, Spring Boot, e altre tecnologie).
 
 ## 👤 Autore
 
