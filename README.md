@@ -1,41 +1,46 @@
 # EserciziAcademy
 
-Raccolta di esercitazioni Java svolte durante il percorso Academy, organizzate per argomento e per giornata di lavoro.
+A collection of Java exercises developed during the Academy training path, organized by topic and by study day.
 
-## 📁 Struttura del progetto
+## 📁 Project Structure
+
+```text
 EserciziAcademy/
 ├── EsercitazioneHibernate/
-│ ├── EsercizioGiorno1_Hibernate/
-│ │ └── Esercizio1/
-│ └── EsercizioGiorno2_Hibernate/
+│   ├── EsercizioGiorno1_Hibernate/
+│   │   └── Esercizio1/
+│   └── EsercizioGiorno2_Hibernate/
 └── Esercizi_Academy_BackEndJava/
-├── academy/
-└── EserciziAcademy_Backend.iml
+    ├── academy/
+    └── EserciziAcademy_Backend.iml
+```
 
-## 📚 Contenuti
+## 📚 Contents
 
 ### Esercizi_Academy_BackEndJava
-Esercitazioni generali di back-end Java (progetto IntelliJ IDEA), propedeutiche allo sviluppo di applicazioni server-side.
+General Java back-end exercises (IntelliJ IDEA project), aimed at building server-side development skills.
 
 ### EsercitazioneHibernate
-Esercitazioni pratiche sull'ORM Hibernate.
+Hands-on exercises focused on Hibernate ORM.
 
 ### EsercitazioneSpringBoot
-Esercitazioni dedicate al framework Spring e a Spring Boot
+Exercises dedicated to the Spring Framework and Spring Boot.
 
+## 🛠️ Technologies Used
 
-## 🛠️ Tecnologie utilizzate
-
-- **Linguaggio:** Java
+- **Language:** Java
 - **Framework:** Spring, Spring Boot
 - **ORM:** Hibernate
-- **Build tool:** Maven
+- **Build Tool:** Maven
 - **Database:** MySQL, PostgreSQL
 
+## 📌 Notes
 
-## 📌 Note
+This repository is intended for educational purposes and was created during the Academy training path. The contents will be progressively updated with new exercises involving Hibernate, Spring, Spring Boot, and other technologies.
 
-Repository a scopo didattico, creato durante il percorso di formazione Academy. I contenuti verranno aggiornati progressivamente con nuove esercitazioni (Hibernate, Spring, Spring Boot, e altre tecnologie).
+## 👤 Author
+
+**Eiphilim-dev**
 
 ## 👤 Autore
 
