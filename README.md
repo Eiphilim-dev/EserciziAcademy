@@ -1,8 +1,14 @@
 # EserciziAcademy
 
-A collection of Java exercises developed during the Academy training path, organized by topic and by study day.
+> Italiano ⬇ | English ⬇
 
-## 📁 Project Structure
+---
+
+## 🇮🇹 Italiano
+
+Raccolta di esercitazioni Java svolte durante il percorso Academy, organizzate per argomento e per giornata di lavoro.
+
+### 📁 Struttura del progetto
 
 ```text
 EserciziAcademy/
@@ -15,18 +21,65 @@ EserciziAcademy/
     └── EserciziAcademy_Backend.iml
 ```
 
-## 📚 Contents
+### 📚 Contenuti
 
-### Esercizi_Academy_BackEndJava
+#### Esercizi_Academy_BackEndJava
+Esercitazioni generali di back-end Java (progetto IntelliJ IDEA), propedeutiche allo sviluppo di applicazioni server-side.
+
+#### EsercitazioneHibernate
+Esercitazioni pratiche sull'ORM Hibernate.
+
+#### EsercitazioneSpringBoot
+Esercitazioni dedicate al framework Spring e a Spring Boot.
+
+### 🛠️ Tecnologie utilizzate
+
+- **Linguaggio:** Java
+- **Framework:** Spring, Spring Boot
+- **ORM:** Hibernate
+- **Build tool:** Maven
+- **Database:** MySQL, PostgreSQL
+
+### 📌 Note
+
+Repository a scopo didattico, creato durante il percorso di formazione Academy.  
+I contenuti verranno aggiornati progressivamente con nuove esercitazioni (Hibernate, Spring, Spring Boot, e altre tecnologie).
+
+### 👤 Autore
+
+**Eiphilim-dev**
+
+---
+
+## EN English
+
+A collection of Java exercises developed during the Academy training path, organized by topic and by study day.
+
+### 📁 Project Structure
+
+```text
+EserciziAcademy/
+├── EsercitazioneHibernate/
+│   ├── EsercizioGiorno1_Hibernate/
+│   │   └── Esercizio1/
+│   └── EsercizioGiorno2_Hibernate/
+└── Esercizi_Academy_BackEndJava/
+    ├── academy/
+    └── EserciziAcademy_Backend.iml
+```
+
+### 📚 Contents
+
+#### Esercizi_Academy_BackEndJava
 General Java back-end exercises (IntelliJ IDEA project), aimed at building server-side development skills.
 
-### EsercitazioneHibernate
+#### EsercitazioneHibernate
 Hands-on exercises focused on Hibernate ORM.
 
-### EsercitazioneSpringBoot
+#### EsercitazioneSpringBoot
 Exercises dedicated to the Spring Framework and Spring Boot.
 
-## 🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 - **Language:** Java
 - **Framework:** Spring, Spring Boot
@@ -34,10 +87,11 @@ Exercises dedicated to the Spring Framework and Spring Boot.
 - **Build Tool:** Maven
 - **Database:** MySQL, PostgreSQL
 
-## 📌 Notes
+### 📌 Notes
 
-This repository is intended for educational purposes and was created during the Academy training path. The contents will be progressively updated with new exercises involving Hibernate, Spring, Spring Boot, and other technologies.
+This repository is intended for educational purposes and was created during the Academy training path.  
+The contents will be progressively updated with new exercises involving Hibernate, Spring, Spring Boot, and other technologies.
 
-## 👤 Author
+### 👤 Author
 
 **Eiphilim-dev**
