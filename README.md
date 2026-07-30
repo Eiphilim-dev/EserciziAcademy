@@ -41,7 +41,3 @@ This repository is intended for educational purposes and was created during the 
 ## 👤 Author
 
 **Eiphilim-dev**
-
-## 👤 Autore
-
-**Eiphilim-dev**
