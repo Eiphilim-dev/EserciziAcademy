@@ -24,7 +24,7 @@ EserciziAcademy/
 ### 📚 Contenuti
 
 #### Esercizi_Academy_BackEndJava
-Esercitazioni generali di back-end Java (progetto IntelliJ IDEA), propedeutiche allo sviluppo di applicazioni server-side.
+Esercitazioni generali di back-end Java, propedeutiche allo sviluppo di applicazioni server-side.
 
 #### EsercitazioneHibernate
 Esercitazioni pratiche sull'ORM Hibernate.
@@ -71,7 +71,7 @@ EserciziAcademy/
 ### 📚 Contents
 
 #### Esercizi_Academy_BackEndJava
-General Java back-end exercises (IntelliJ IDEA project), aimed at building server-side development skills.
+General Java back-end exercises, aimed at building server-side development skills.
 
 #### EsercitazioneHibernate
 Hands-on exercises focused on Hibernate ORM.
