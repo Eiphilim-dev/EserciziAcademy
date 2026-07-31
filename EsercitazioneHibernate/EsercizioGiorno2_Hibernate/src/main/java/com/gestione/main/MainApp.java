@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MainApp {
     static void main(String[] args) {
-        System.out.println("=== INIZIO TEST GESTIONE STUDENTI (Senza Optional) ===\n");
+        System.out.println("=== INIZIO TEST GESTIONE STUDENTI ===\n");
 
         IDao<Studente, Integer> studenteDao = new StudenteDaoImpl();
         IDao<Matricola, Integer> matricolaDao = new MatricolaDaoImpl();
