@@ -1,8 +1,6 @@
-package com.gestione.config;
+package config;
 
-import com.gestione.entity.Corso;
-import com.gestione.entity.Matricola;
-import com.gestione.entity.Studente;
+import entity.RichiestaFerie;
 import jakarta.annotation.Nonnull;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -22,9 +20,7 @@ public class HibernateUtil {
 
                 configuration.setProperties(properties);
 
-                configuration.addAnnotatedClass(Studente.class);
-                configuration.addAnnotatedClass(Matricola.class);
-                configuration.addAnnotatedClass(Corso.class);
+                configuration.addAnnotatedClass(RichiestaFerie.class);
 
                 sessionFactory = configuration.buildSessionFactory();
 
@@ -49,7 +45,7 @@ public class HibernateUtil {
         Properties properties = new Properties();
 
         properties.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-        properties.put(Environment.URL, "jdbc:mysql://localhost:3306/test_Uni_db?createDatabaseIfNotExist=true");
+        properties.put(Environment.URL, "jdbc:mysql://localhost:3306/ferie_db?createDatabaseIfNotExist=true");
         properties.put(Environment.USER, "root");
         properties.put(Environment.PASS, "yourpass.");
 

@@ -1,0 +1,129 @@
+1) Definisce un ORM.
+L'ORM è una tecnica che mappa le classi di un programma orientato agli oggetti (es. Java) sulle tabelle di un database relazionale (SQL), automatizzando la conversione tra oggetti in memoria e righe del DB.
+
+2) Come può essere classificato un sistema ORM? Argomenta.
+Si classifica in base al livello di automazione:
+
+Full-ORM: Gestisce completamente la persistenza e le query senza richiedere SQL manuale (es. Hibernate).
+
+Data Mapper / Semi-ORM: Mappa tabelle ed oggetti ma richiede la scrittura manuale delle query SQL (es. MyBatis).
+
+Active Record: L'oggetto contiene sia i dati della riga che le funzioni di salvataggio/lettura dal DB.
+
+3) Cos’è Hibernate?
+Hibernate è un framework ORM open source per Java che implementa lo standard JPA (Jakarta Persistence), offrendo la gestione automatica delle operazioni CRUD e traducendo gli oggetti in query SQL.
+
+4) Cosa si intende per persistenza dei dati?
+La capacità dei dati di essere salvati su un supporto non volatile (come un DB) in modo da rimanere disponibili anche dopo la chiusura del programma.
+
+5) Quali sono le caratteristiche degli stati di persistenza?
+Transient: Oggetto appena creato con new, non collegato al DB né alla sessione.
+
+Persistent: Oggetto collegato alla sessione e sincronizzato con il DB (dirty checking attivo).
+
+Detached: Oggetto salvato nel DB ma con la sessione di riferimento chiusa.
+
+Removed: Oggetto segnato per essere eliminato dal DB al prossimo commit.
+
+6) Cos’è una session? E una Session Factory?
+Session Factory: Oggetto pesante e unico per applicazione (thread-safe) che legge la configurazione e crea le sessioni.
+
+Session: Oggetto leggero e temporaneo (non thread-safe) che gestisce una singola connessione con il DB per eseguire le operazioni CRUD.
+
+7) Cosa si intende per JDBC?
+JDBC (Java Database Connectivity) è l'API standard di basso livello di Java che consente la connessione a un database e l'esecuzione diretta di query SQL.
+
+8) Che cos’è la serializzazione? E la deserializzazione?
+Serializzazione: Conversione di un oggetto Java in un flusso di byte per salvarlo o trasmetterlo.
+
+Deserializzazione: Ricostruzione dell'oggetto Java originale a partire dal flusso di byte.
+
+9) Cos’è Unified Modeling Language?
+L'UML è un linguaggio grafico standard utilizzato per progettare, visualizzare e documentare l'architettura dei sistemi software.
+
+10) Definisci il diagramma delle classi.
+È un diagramma UML strutturale che rappresenta la vista statica del sistema, mostrandone le classi, gli attributi, i metodi e le relazioni tra esse.
+
+11) Spiega le differenze tra associazioni, aggregazioni e composizione.
+Associazione: Relazione generica tra due classi indipendenti.
+
+Aggregazione: Relazione di contenimento debole: il contenuto appartiene al contenitore ma può esistere anche senza di esso (es. Squadra-Giocatore).
+
+Composizione: Relazione di contenimento forte: se il contenitore viene distrutto, si distrugge anche il contenuto (es. Casa-Stanza).
+
+12) Si elenchino le caratteristiche di un Java Bean e quelle di un Entity Bean.
+Java Bean: Classe con costruttore vuoto pubblico, attributi privati con getter/setter e interfaccia Serializable.
+
+Entity Bean: Componente (JPA/EJB) mappato direttamente su una tabella di un database relazionale.
+
+13) Quali sono le differenze tra JDBC e Hibernate?
+JDBC richiede la scrittura manuale delle query SQL e della mappatura dei dati. Hibernate automatizza la mappatura oggetti-tabelle, astrae il dialetto SQL del database e gestisce automaticamente le relazioni.
+
+14) Descrivere il ciclo di vita di un’entità.
+Un'entità nasce come Transient (new), diventa Persistent quando viene salvata/caricata tramite la sessione, diventa Detached alla chiusura della sessione, e Removed se passata a un metodo di cancellazione prima del flush/commit.
+
+15) Quale libreria viene implementata ed estesa da Hibernate?
+Implementa ed estende l'API standard JPA (Jakarta Persistence API) e si basa a basso livello su JDBC.
+
+16) Descrivere Statement, PreparedStatement e Result Set.
+Statement: Esegue query SQL statiche e senza parametri.
+
+PreparedStatement: Esegue query SQL parametrizzate e precompilate (protegge da SQL Injection).
+
+ResultSet: L'oggetto che contiene e scorre la tabella dei dati restituiti da una SELECT.
+
+17) A cosa serve il file hibernate.cfg.xml?
+Contiene la configurazione di Hibernate: credenziali del database, dialetto SQL, mapping delle entità e gestione dello schema (hbm2ddl).
+
+18) A cosa serve il file pom.xml?
+È il file di configurazione centrale di Maven; gestisce le dipendenze (librerie JAR), i plugin di build e la versione del JDK.
+
+19) Quali sono le opzioni possibili per hibernate.hbm2ddl.auto?
+validate: Verifica la corrispondenza dello schema DB.
+
+update: Aggiorna lo schema senza cancellare dati.
+
+create: Elimina e ricrea lo schema all'avvio.
+
+create-drop: Ricrea lo schema all'avvio e lo cancella alla chiusura della SessionFactory.
+
+none: Disabilita modifiche automatiche allo schema.
+
+20) Come si possono configurare le relazioni tra Entity in Hibernate?
+Usando le annotazioni JPA sulle proprietà della classe: @OneToOne, @OneToMany, @ManyToOne e @ManyToMany.
+
+21) Cos’è un Maven Project?
+Un progetto la cui struttura, gestione delle librerie (dipendenze) e processi di compilazione/packaging sono gestiti dallo strumento Apache Maven.
+
+22) Cosa si intende per persistenza? Ed in cosa consiste il contesto di persistenza?
+La persistenza è la memorizzazione permanente dei dati. Il contesto di persistenza è l'ambiente (gestito da Session/EntityManager) che fa da cache di primo livello e traccia le modifiche delle entità collegate.
+
+23) Cosa si intende per EntityManager?
+È l'interfaccia standard JPA usata per interagire con il contesto di persistenza (esegue le operazioni CRUD e le query).
+
+24) Quali sono le annotazioni necessarie alla configurazione di una Entity?
+Le principali sono: @Entity (definisce la classe come entità), @Id (indica la Primary Key) e @GeneratedValue (gestisce l'auto-incremento).
+
+25) Cosa è fetching? E cascade?
+Fetching: Stabilisce quando caricare i dati correlati (LAZY = al momento del bisogno, EAGER = subito).
+
+Cascade: Propaga le operazioni (es. salvataggio o cancellazione) dall'entità padre alle entità figlie collegate.
+
+26) Cosa si intende per Impedance Mismatch?
+È il disallineamento concettuale tra il modello ad Oggetti (classi, ereditarietà, riferimenti) e il modello Relazionale dei database (tabelle, righe, chiavi esterne).
+
+27) Elenca le strategie risolutive per Impedance Mismatch.
+Utilizzo di un framework ORM.
+
+Mappatura dell'ereditarietà (SINGLE_TABLE, JOINED, TABLE_PER_CLASS).
+
+Uso di componenti embedded (@Embeddable).
+
+28) Cos’è un framework?
+Una struttura software pre-costruita che fornisce un'architettura di base ed esegue il codice dello sviluppatore sfruttando l'Inversione del Controllo (IoC).
+
+29) Che cos’è un design pattern?
+Una soluzione concettuale e riutilizzabile a un problema di progettazione software ricorrente.
+
+30) Che cos’è un POJO?
+Un POJO (Plain Old Java Object) è una classe Java semplice che non eredita né dipende da interfacce o classi di framework specifici.
