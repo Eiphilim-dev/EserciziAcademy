@@ -37,3 +37,12 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+.gitignore
+
+src/main/resources
+
+.mvn
+
+.idea/
+pom.xml.versionsBackup
