@@ -15,10 +15,18 @@ EserciziAcademy/
 ├── EsercitazioneHibernate/
 │   ├── EsercizioGiorno1_Hibernate/
 │   │   └── Esercizio1/
-│   └── EsercizioGiorno2_Hibernate/
+│   ├── EsercizioGiorno2_Hibernate/
+│   └── EserciziGiorno3_Hibernate/
+|       ├── Esercizio1_jdbc/
+|       ├── Esercizio2/
+|       ├── Esercizio3/
+|       ├── Esercizio4/
+│       └── RisposteDomandeTeoria.txt
+├── EsercitazioneSpring/
+|   ├── EsercizioSpringGiorno1/
+|   └── EsercizioSpringGiorno2/
 └── Esercizi_Academy_BackEndJava/
-    ├── academy/
-    └── EserciziAcademy_Backend.iml
+    └── academy/
 ```
 
 ### 📚 Contenuti
@@ -62,10 +70,18 @@ EserciziAcademy/
 ├── EsercitazioneHibernate/
 │   ├── EsercizioGiorno1_Hibernate/
 │   │   └── Esercizio1/
-│   └── EsercizioGiorno2_Hibernate/
+│   ├── EsercizioGiorno2_Hibernate/
+│   └── EserciziGiorno3_Hibernate/
+|       ├── Esercizio1_jdbc/
+|       ├── Esercizio2/
+|       ├── Esercizio3/
+|       ├── Esercizio4/
+│       └── RisposteDomandeTeoria.txt
+├── EsercitazioneSpring/
+|   ├── EsercizioSpringGiorno1/
+|   └── EsercizioSpringGiorno2/
 └── Esercizi_Academy_BackEndJava/
-    ├── academy/
-    └── EserciziAcademy_Backend.iml
+    └── academy/
 ```
 
 ### 📚 Contents
