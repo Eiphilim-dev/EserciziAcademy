@@ -26,7 +26,7 @@ public class Smartphone {
     }
 
     public void accendi() {
-        System.out.println("Dispositivo acceso! Stato: " + batteria);
+        System.out.println("Smartphone acceso, Stato: " + batteria);
     }
 
     public void avviaGioco() {

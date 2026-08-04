@@ -28,7 +28,7 @@ public class Batteria {
 
     public void usa(int consumo) {
         this.carica = Math.max(0, this.carica - consumo);
-        System.out.println("   [Batteria] Consumo in corso... Carica residua: " + carica + "%");
+        System.out.println("   Consumo in corso... Carica residua: " + carica + "%");
     }
 
     public String getMarca() {
