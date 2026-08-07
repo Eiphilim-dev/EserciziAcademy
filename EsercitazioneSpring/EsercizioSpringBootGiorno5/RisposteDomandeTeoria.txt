@@ -1,0 +1,140 @@
+1) Cos’è una API?
+Una API (Application Programming Interface) è un ponte che permette a due applicazioni software diverse di comunicare tra loro e scambiarsi dati, seguendo regole e formati ben definiti.
+
+2) Descrivi l’architettura di Spring Framework.
+L'architettura di Spring è modulare ed è organizzata in diversi blocchi principali:
+
+Core Container: il cuore di Spring (IoC e Beans) che gestisce la creazione e il ciclo di vita degli oggetti.
+
+Accesso Dati/Integrazione: moduli come JDBC e ORM (Hibernate) per comunicare con i database.
+
+Web: moduli per la creazione di applicazioni web ed API (Spring MVC).
+
+AOP (Aspect-Oriented Programming): gestisce aspetti trasversali come la sicurezza o i log senza sporcare il codice principale.
+
+3) Che differenza c’è tra Spring e Spring Boot?
+Spring Framework: offre tutte le funzionalità base e la struttura, ma richiede molta configurazione manuale (file XML o classi Java).
+
+Spring Boot: è un'estensione di Spring che semplifica lo sviluppo grazie all'autoconfigurazione e a server web già integrati (come Tomcat), permettendo di avviare un'applicazione pronta all'uso con zero o poche configurazioni.
+
+4) A cosa serve il file application.properties?
+È il file di configurazione centrale delle applicazioni Spring Boot. Serve a definire le impostazioni dell'applicazione in formato chiave-valore (es. parametri di connessione al database, porta del server web, livelli di log).
+
+5) Che cos’è IoC Container e come funziona?
+L'IoC Container è il motore centrale di Spring. Funziona leggendo le configurazioni del progetto (annotazioni o file), creando gli oggetti necessari (i Bean) e iniettando automaticamente le dipendenze tra di loro dove richiesto.
+
+6) Cos’è una Dependency Injection?
+La Dependency Injection (DI) è il meccanismo con cui un oggetto non crea da solo le altre classi di cui ha bisogno (le sue dipendenze), ma le riceve dall'esterno (dal framework). Questo rende il codice più flessibile e facile da testare.
+
+7) Cos’è Inversion of Control (IoC)?
+L'Inversion of Control (IoC) è il principio generale per cui il controllo del flusso del programma non è gestito direttamente dallo sviluppatore (che non usa più new NomeClasse()), ma viene delegato a un framework esterno come Spring.
+
+8) Descrivere la funzione dell’annotazione @Component?
+Indica a Spring che la classe contrassegnata deve essere gestita come un Bean. Spring la rileverà automaticamente durante la scansione del progetto e ne creerà un'istanza nell'IoC Container.
+
+9) Come utilizziamo @Configuration?
+Si applica a una classe per indicare che contiene metodi di configurazione per Spring. Al suo interno definiamo solitamente metodi annotati con @Bean per configurare manualmente oggetti gestiti dal framework.
+
+10) Cosa rappresenta l’application context?
+L'ApplicationContext è l'interfaccia principale dell'IoC Container in Spring. Rappresenta l'ambiente dell'applicazione in esecuzione, da cui è possibile recuperare i Bean, gestire gli eventi e accedere alle configurazioni.
+
+11) Cos’è un Bean?
+Un Bean è un semplice oggetto Java che viene creato, configurato e interamente gestito dall'IoC Container di Spring anziché dal programmatore.
+
+12) Cosa si intende per Injection Point? E @Autowired?
+Injection Point: è il punto specifico del codice (un costruttore, un campo o un metodo setter) in cui Spring deve inserire una dipendenza.
+
+@Autowired: è l'annotazione usata per dire a Spring "trova il Bean adatto e iniettalo automaticamente in questo punto".
+
+13) Quanti modi esistono per configurare Spring? Argomenta.
+Esistono 3 modi principali:
+
+Configurazione basata su XML: il modo storico, definisce i bean in file .xml separati (poco usata oggi).
+
+Configurazione tramite Annotazioni: si usano annotazioni nel codice come @Component e @Autowired insieme al component scanning.
+
+Configurazione Java-Based: si usano classi annotate con @Configuration e metodi annotati con @Bean.
+
+14) Spiega l’utilizzo dell’annotazione @Lazy.
+Tells Spring di non creare subito un Bean all'avvio dell'applicazione, ma di crearlo soltanto la prima volta che viene effettivamente richiesto o utilizzato.
+
+15) Cosa si intende per Bean Scope?
+Il Bean Scope definisce la durata e il ciclo di vita di un Bean. I principali sono:
+
+Singleton (default): viene creata una sola istanza del Bean per tutta l'applicazione.
+
+Prototype: viene creata una nuova istanza ogni volta che il Bean viene richiesto.
+
+Request / Session: l'istanza dura solo per una singola richiesta HTTP o per l'intera sessione utente (in ambito Web).
+
+16) Come utilizziamo l’annotazione @Qualifier? E @Resource?
+@Qualifier: si usa insieme a @Autowired quando ci sono più Bean dello stesso tipo, per specificare esattamente quale Bean vogliamo iniettare tramite il suo nome.
+
+@Resource: è un'annotazione dello standard Java (JAX-RS/Jakarta) che inietta una dipendenza cercandola principalmente per nome anziché per tipo.
+
+17) Qual è la differenza tra session e transaction?
+Session (Web/Database): rappresenta la connessione aperta di un utente con l'applicazione o un canale di lavoro con il database che dura nel tempo.
+
+Transaction (Transazione): è un blocco temporaneo di operazioni sul database che deve completarsi con successo in modo atomico (tutto va a buon fine o tutto viene annullato).
+
+18) A cosa serve una repository?
+Nel contesto di Spring (es. Spring Data JPA), una Repository è un componente dedicato esclusivamente alla gestione dell'accesso ai dati (lettura, salvataggio, modifica, eliminazione su un database), nascondendo la complessità delle query SQL.
+
+19) Cos’è il pattern architetturale MVC?
+MVC (Model-View-Controller) è un pattern che separa l'applicazione in 3 componenti distinti per organizzare meglio il codice: i dati (Model), l'interfaccia utente (View) e la logica di controllo (Controller).
+
+20) Descrivi dettagliatamente View, Model e Control.
+Model: contiene i dati dell'applicazione e la logica di business.
+
+View: l'interfaccia grafica o visiva che mostra i dati all'utente 
+
+Controller: intercetta le richieste dell'utente, interagisce con il Model per recuperare o modificare i dati e sceglie quale View restituire.
+
+21) Cosa si intende per ViewResolver?
+In Spring MVC, il ViewResolver è il componente che converte il nome logico di una vista (es. "home") restituito dal Controller nel file effettivo da mostrare all'utente.
+
+22) Cos’è Rest Controller?
+È un controller speciale (annotato con @RestController) pensato per le API REST. A differenza del classico controller MVC, restituisce direttamente i dati (solitamente in formato JSON) nel corpo della risposta HTTP, anziché pagine HTML.
+
+23) Come funzionano le web application?
+Seguono un modello Client-Server:
+
+Il client invia una richiesta HTTP al server.
+
+Il server elabora la richiesta, interagisce con eventuali database o servizi.
+
+Il server restituisce al client una risposta HTTP.
+
+24) Descrivere l’utilizzo dell’annotazione @RequestMapping?
+Serve a mappare le richieste HTTP verso uno specifico metodo o classe controller. Permette di definire l'URL e facoltativamente il metodo HTTP quindi con GET, POST, ecc.
+
+25) Descrivere l’utilizzo dell’annotazione @ResponseBody?
+Dice a Spring di prendere l'oggetto restituito da un metodo del controller e inserirlo direttamente nel corpo della risposta HTTP (convertendolo solitamente in JSON), saltando la ricerca di una pagina o vista HTML.
+
+26) Descrivere l’utilizzo dell’annotazione @PathVariable?
+Serve a estrarre valori dinamici inclusi direttamente nel percorso dell'URL Consente di associare quel parametro dell'URL a una variabile nel metodo Java.
+
+27) Descrivere l’utilizzo dell’annotazione @RequestParam?
+Serve a leggere i parametri passati nella Query String dell'URL o inviati tramite form dati, associandoli alle variabili dei metodi Java.
+
+28) Come funziona il protocollo HTTP?
+È un protocollo stateless (senza memoria) basato su Richiesta e Risposta:
+
+Il Client invia una Richiesta HTTP contenente un metodo (GET, POST, PUT, DELETE), un URL, degli header e un eventuale body.
+
+Il Server riceve, elabora e restituisce una Risposta HTTP contenente un codice di stato (HTTP Status), header e un eventuale body.
+
+29) Descrivere gli HTTP Status.
+I codici di stato indicano l'esito della richiesta e si dividono in 5 famiglie:
+
+1xx (Informativi): la richiesta è stata ricevuta.
+
+2xx (Successo): l'operazione è andata a buon fine
+3xx (Multiple Azioni): occorre fare un'ulteriore azione
+4xx (Errore Client): problema nella richiesta inoltrata dall'utente 
+5xx (Errore Server): il server ha incontrato un errore interno
+
+30) Qual è lo scopo dei cookie e qual è il loro funzionamento?
+Serve a rendere "con memoria" il protocollo HTTP (che di natura non ricorda le visite precedenti), memorizzando informazioni come sessioni di login, preferenze o carrelli della spesa.
+
+Il server invia un piccolo frammento di testo al browser nell'intestazione della risposta HTTP. Il browser lo salva sul dispositivo dell'utente e lo rimanda automaticamente al server a ogni successiva richiesta verso quel sito.
